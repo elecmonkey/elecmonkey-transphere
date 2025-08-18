@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run ssg && tsc && vite build",
+    "build:original": "tsc && vite build",
+    "ssg": "node scripts/build-ssg.js",
     "preview": "vite preview"
   },
   "devDependencies": {
