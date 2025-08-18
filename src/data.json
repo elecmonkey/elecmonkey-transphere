@@ -1,0 +1,30 @@
+{
+  "site": {
+    "title": "Elecmonkey's Transphere",
+    "subtitle": "交通 · 轨道 · 旅行",
+    "description": "From https://www.elecmonkey.com"
+  },
+  "articles": [
+    {
+        "id": 1,
+        "title": "宣州诗画徐徐开：宣绩高铁开通行记",
+        "url": "https://mp.weixin.qq.com/s/0AS24qQJGfbj1t_LkKYMvA",
+        "date": "2024-11-10",
+        "description": "记录宣绩高铁开通的历史时刻"
+    },
+    {
+        "id": 2,
+        "title": "请到天涯海角来：海南铁路85载漫谈",
+        "url": "https://mp.weixin.qq.com/s/mmI5MxYytkb0NliFdFxPrQ",
+        "date": "2025-04-23",
+        "description": "回顾海南铁路85年的发展历程"
+    },
+    {
+        "id": 3,
+        "title": "十年磨一线，南北终贯通：写在5号线宣布全线开通之时",
+        "url": "https://mp.weixin.qq.com/s/QLslp_LgrMa2p1Di4AdU4Q",
+        "date": "2025-08-05",
+        "description": "南京地铁5号线。"
+    }
+  ]
+}
