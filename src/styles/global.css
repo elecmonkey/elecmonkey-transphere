@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background: 
+        linear-gradient(45deg, rgba(59, 130, 246, 0.05) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(59, 130, 246, 0.05) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(59, 130, 246, 0.05) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(59, 130, 246, 0.05) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  }
+
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .bg-grid-pattern {
+        background: 
+            linear-gradient(45deg, rgba(59, 130, 246, 0.1) 25%, transparent 25%),
+            linear-gradient(-45deg, rgba(59, 130, 246, 0.1) 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, rgba(59, 130, 246, 0.1) 75%),
+            linear-gradient(-45deg, transparent 75%, rgba(59, 130, 246, 0.1) 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+  }
+  
+  :is(.dark .bg-grid-pattern) {
+        background: 
+            linear-gradient(45deg, rgba(59, 130, 246, 0.1) 25%, transparent 25%),
+            linear-gradient(-45deg, rgba(59, 130, 246, 0.1) 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, rgba(59, 130, 246, 0.1) 75%),
+            linear-gradient(-45deg, transparent 75%, rgba(59, 130, 246, 0.1) 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  }
+}
